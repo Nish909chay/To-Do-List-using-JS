@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width = device-width,initial-scale=1">
-        <title>To - Do List</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="toDoApp">
-                <h2>To - Do List <img src="imgs/icon.png" ></h2>
-                <div class="row">
-                    <input type="text" id="input-box" placeholder="Add your Text">
-                    <button onclick="AddTask()">Add</button>
-                </div>
-                <ul id="list-container">
-                    <!-- <li class ="checked">Task 1</li>
-                    <li>Task 2</li>
-                    <li>Task 3</li> -->
-                </ul>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>My Tasks</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-bg">
+        <!-- No illustration or icon -->
+    </div>
+    <div class="container">
+        <div class="toDoApp">
+            <div class="header-row">
+                <h2>My Tasks</h2>
+                <button id="mode-toggle" title="Toggle dark/light mode"><i class="fa-solid fa-moon"></i></button>
             </div>
+            <div class="quote" id="motivational-quote">You got this!</div>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task...">
+                <button id="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+            </div>
+            <div class="task-info">
+                <span id="task-counter">0 tasks</span>
+            </div>
+            <ul id="list-container">
+                <!-- Tasks will be injected here -->
+            </ul>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
